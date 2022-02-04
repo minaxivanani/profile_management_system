@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="profile_actions" model="ir.actions.act_window">
+        <field name="name">My Profile</field>
+        <field name="res_model">myprofile</field>
+        <field name="view_mode">tree,form</field>
+        
+    </record>
+
+
+    <menuitem id="profile_root_menu" name="profile_management"/>
+
+    <menuitem id="profile_second_menu" name="MY Profile" parent="profile_root_menu"/>
+    <menuitem id="profile_second_menu_sub" parent="profile_second_menu" action="profile_actions"/> 
+
+    
+</odoo>
